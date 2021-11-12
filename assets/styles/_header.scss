@@ -1,0 +1,70 @@
+header {
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+
+  .container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      color: inherit;
+      text-transform: uppercase;
+      font-size: 32px;
+      font-weight: 900;
+
+      span {
+        font-weight: 600;
+      }
+    }
+
+    .logo {
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Pacifico', cursive;
+        font-weight: bold;
+        font-size: 28px;
+        text-transform: uppercase;
+        span{
+          font-family: 'Pacifico', cursive;
+          color: #f3b832;
+        }
+      }
+    }
+
+    nav {
+      display: grid;
+      grid-gap: 16px;
+      grid-template-columns: repeat(6, auto);
+
+      @media (max-width: 767px) {
+        display: none;
+      }
+
+      a {
+        color: inherit;
+        font-size: 20px;
+        text-decoration: none;
+
+        &:hover {
+          color: #f3b832;
+        }
+      }
+    }
+  }
+
+  &.is-scrolling {
+    background-color: #12002f;
+    .container {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+  }
+}
