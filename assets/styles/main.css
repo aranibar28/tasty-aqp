@@ -300,7 +300,7 @@ main section.banner .container h3 {
 section .social {
   position: absolute;
   right: 50px;
-  bottom: 80px;
+  bottom: 50px;
   z-index: 1;
 }
 
@@ -368,6 +368,7 @@ section .social ul li a:hover .fa-whatsapp {
 
 @media (max-width: 767px) {
   section .social {
+    bottom: 25px;
     left: 0;
     right: 0;
   }

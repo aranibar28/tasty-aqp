@@ -2,7 +2,7 @@ section {
   .social {
     position: absolute;
     right: 50px;
-    bottom: 80px;
+    bottom: 50px;
     z-index: 1;
 
     ul {
@@ -45,6 +45,7 @@ section {
     }
 
     @media (max-width: 767px) {
+      bottom: 25px;
       left: 0;
       right: 0;
       ul {
